@@ -1,16 +1,15 @@
-
-```yaml
 ---
 title: Ca Accounting Agent
 emoji: 🏦
-colorFrom: blue
-colorTo: green
+colorFrom: green
+colorTo: blue
 sdk: docker
 app_port: 7860
 pinned: false
 ---
 
 # 🏦 CA Accounting RL Environment
+
 > **Empowering AI to solve Real-World Financial Challenges.** > Built for the **Meta PyTorch OpenEnv Hackathon 2026**
 
 [![HuggingFace](https://img.shields.io/badge/🤗_Live_Demo-HuggingFace-orange)](https://huggingface.co/spaces/madhvirathor14/ca-accounting-agent)
