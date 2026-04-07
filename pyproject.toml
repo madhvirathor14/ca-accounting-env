@@ -5,12 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ca-accounting-agent"
 version = "1.0.0"
-description = "AI-powered RL environment for financial accounting tasks."
+description = "RL Environment for Financial Accounting"
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [
-    {name = "Madhvi Rathor"}
-]
+authors = [{name = "Madhvi Rathor"}]
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -20,5 +18,12 @@ dependencies = [
     "openenv-core"
 ]
 
+# Dashboard error "Missing [project.scripts]" ko fix karne ke liye ye section mandatory hai:
+[project.scripts]
+server = "main:app"
+
 [tool.setuptools]
 packages = ["tasks"]
+
+[project.entry-points."openenv.environments"]
+ca-accounting = "environment:CAAccountingEnv"
