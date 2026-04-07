@@ -1,0 +1,26 @@
+name: ca-accounting-env
+version: "1.0"
+description: "Real-world Accounting RL Environment for Profit & Loss, Variance, and Depreciation tasks."
+author: "Madhvi Rathor"
+
+# Registering the 3 tasks we built
+tasks:
+  - id: profit_loss
+    difficulty: easy
+    description: "Calculate Gross and Net Profit with partial rewards."
+  - id: budget_variance
+    difficulty: medium
+    description: "Analyze budget deviations and Favorable/Adverse status."
+  - id: depreciation
+    difficulty: hard
+    description: "Calculate SLM and WDV depreciation over multiple years."
+
+# Defining what the Agent sees
+observation_space:
+  type: dict
+  fields: [task_id, difficulty, data, question]
+
+# Defining what the Agent returns
+action_space:
+  type: dict
+  description: "JSON dictionary of financial results (e.g., {'net_profit': 5000})"
