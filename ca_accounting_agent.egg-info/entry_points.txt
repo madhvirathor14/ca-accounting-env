@@ -1,0 +1,5 @@
+[console_scripts]
+server = server.app:main
+
+[openenv.environments]
+ca-accounting = environment:CAAccountingEnv

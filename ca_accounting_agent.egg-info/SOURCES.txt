@@ -1,0 +1,16 @@
+README.md
+data_generator.py
+environment.py
+inference.py
+main.py
+pyproject.toml
+ca_accounting_agent.egg-info/PKG-INFO
+ca_accounting_agent.egg-info/SOURCES.txt
+ca_accounting_agent.egg-info/dependency_links.txt
+ca_accounting_agent.egg-info/entry_points.txt
+ca_accounting_agent.egg-info/requires.txt
+ca_accounting_agent.egg-info/top_level.txt
+tasks/__init__.py
+tasks/task1_pl.py
+tasks/task2_variance.py
+tasks/task3_depreciation.py
