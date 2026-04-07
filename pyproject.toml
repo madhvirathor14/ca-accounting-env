@@ -18,9 +18,9 @@ dependencies = [
     "openenv-core"
 ]
 
-# Dashboard error "Missing [project.scripts]" ko fix karne ke liye ye section mandatory hai:
+# Dashboard error fix karne ke liye ye entry point update kiya hai
 [project.scripts]
-server = "main:app"
+ca-accounting-agent = "main:app"
 
 [tool.setuptools]
 packages = ["tasks"]
