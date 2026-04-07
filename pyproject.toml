@@ -20,7 +20,7 @@ dependencies = [
 
 # Dashboard ka "Missing server entry point" error yahi line theek karegi
 [project.scripts]
-server = "main:main"
+server = "server.app:main"
 
 [tool.setuptools]
 packages = ["tasks"]

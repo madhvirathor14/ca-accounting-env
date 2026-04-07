@@ -61,8 +61,18 @@ async def get_env_state():
     return accounting_env.state()
 
 # --- SERVER STARTUP ---
+# --- SERVER STARTUP ---
 
-if __name__ == "__main__":
-    # Port 7860 is strictly required for Hugging Face Spaces deployment
+def main():
+    """
+    MANDATORY: Validator isi function ko dhund raha hai.
+    Port 7860 Hugging Face ke liye zaruri hai.
+    """
     print("Starting CA Accounting Environment on Port 7860...")
     uvicorn.run(app, host="0.0.0.0", port=7860)
+
+if __name__ == "__main__":
+    main()
+
+
+
