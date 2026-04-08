@@ -8,7 +8,7 @@ from environment import CAAccountingEnv
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("AccountingAgent")
 
-load_dotenv()
+load_dotenv(override=True)
 
 agent_client = OpenAI(
     base_url=os.environ.get("API_BASE_URL"),
