@@ -12,7 +12,7 @@ load_dotenv()
 
 agent_client = OpenAI(
     base_url=os.environ.get("API_BASE_URL"),
-    api_key=os.environ.get("HF_TOKEN")
+    api_key=os.environ.get("GROQ_API_KEY")
 )
 
 def run_ca_baseline_eval():
